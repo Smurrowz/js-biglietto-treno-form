@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section>
+    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <div class="container ">
+      <div class="ticket-generator padding-all">
+        <div class="col">
+          <label for="fullname">Nome e Cognome</label>
+          <input type="text" name="fullname" required>
+        </div>
+        <div class="col">
+          <label for="distance">Km da Percorrere</label>
+          <input type="number" name="distance" required>
+        </div>
+        <div class="col">
+          <label for="age-range">Fascia d'etá</label>
+          <select id="agerange" name="age-range" required>
+            <option value="Maggiorenne">Maggiorenne</option>
+            <option value="Minorenne">Minorenne</option>
+            <option value="Over65">Over65</option>
+          </select>
+        </div>
+      </div>
+      <div class="padding-all bottom-gen">
+        <input type="submit" value="Genera">
+        <input id="delete-button" type="submit" value="Annulla">
+      </div>
+
+    </div>
+  </section>
+  <section id="ticket" class="d-none">
+    <h2>IL TUO BIGLIETTO</h2>
+    <div class="container padding-all">
+      <h3>dettaglio passeggeri</h3>
+      <div class="your-ticket">
+        <div class="passenger-name">
+          <h3>nome passeggero</h3>
+          <span id="passenger-name"></span>
+        </div>
+        <div class="offer-type">
+          <h3>Offerta</h3>
+          <span id="offer-type"></span>
+        </div>
+        <div class="carriage-number">
+          <h3>Carrozza</h3>
+          <span id="carriage-number"></span>
+        </div>
+        <div class="cp-code">
+          <h3>Codice CP</h3>
+          <span id="cp-code"></span>
+        </div>
+        <div class="ticket-price">
+          <h3>Costo Biglietto</h3>
+          <span id="ticket-price"></span>
+        </div>
+
+      </div>
+      
+    </div>
+  </section>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

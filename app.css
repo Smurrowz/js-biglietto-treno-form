@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  background-color: crimson;
+}
+
+
+section > h2{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 20px;
+  
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: crimson;
+}
+.ticket-generator{
+  display: flex;
+  justify-content: space-around;
+}
+
+.padding-all{
+  padding: 40px;
+}
+.bottom-gen{
+  text-align: center;
+}
+
+
+.your-ticket{
+  display: flex;
+  border: 1px solid grey;
+  justify-content: space-between;
+
+}
+
+.your-ticket div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100px;
+}
+
+.passenger-name{
+  background-color: grey;
+}
+
+.d-none{
+  display: none;
+}
